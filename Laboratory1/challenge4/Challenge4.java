@@ -16,8 +16,8 @@ public class Challenge4 {
      * @param data: Any map type that represents our entrys
      * @return Map type that represent the hash table
      */
-    public Map<String, Integer> hashTableMethod(Map<String, Integer> data){
-        return data.entrySet().stream()
+    public Map<String, Integer> hashTableMethod(List<Map.Entry<String, Integer>> data){
+        return data.stream()
             .map(entry -> Map.entry(entry.getKey().toUpperCase(), entry.getValue()))
             .sorted(Map.Entry.comparingByKey())
             .collect(Collectors.toMap(
@@ -30,12 +30,13 @@ public class Challenge4 {
 
     public static void main(String[] args){
         Challenge4 challenge4 = new Challenge4();
-        Map<String, Integer> hashtableData = new HashMap<>();
-
-        hashtableData.put("silver", 8);
-        hashtableData.put("ruby", 4);
-        hashtableData.put("gold", 12);
-        hashtableData.put("emerald", 6);
+         List<Map.Entry<String, Integer>> hashtableData = List.of(
+            Map.entry("silver", 8),
+            Map.entry("ruby", 4),
+            Map.entry("gold", 12),
+            Map.entry("emerald", 6),
+            Map.entry("gold", 90)
+         );
 
         Map<String, Integer> result = challenge4.hashTableMethod(hashtableData);
 
