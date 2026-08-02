@@ -4,7 +4,7 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
- * Class about the solution of challenge 4 from Laboratory 1, it´s importante to mention that the
+ * Class about the solution of challenge 5 from Laboratory 1, it´s importante to mention that the
  * size of tree set were not mencioned
  * 
  */
