@@ -35,8 +35,7 @@ public class Challenge3 {
      * @param message String that represents the message that was given
      */
     public void collitionMethod(String message){
-        System.out.println(reverseMessage(message));
-        System.out.println(repetitionMessage(message));
+        System.out.println(reverseMessage(repetitionMessage(message)));
     }
 
     public static void main(String[] args){
