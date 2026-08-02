@@ -1,5 +1,7 @@
 package challenge3;
 
+import java.util.List;
+
 /**
  * This class is about the challenge 3 The mysterious Echo
  * 
@@ -10,9 +12,8 @@ public class Challenge3 {
 
     public String repetitionMessage(String message){
         StringBuilder sb = new StringBuilder(message);
-        for(int i=0; i<2; i++){
-            sb.append(" "+message);
-        }
+        List<Integer> li = List.of(1,2);
+        li.stream().forEach(i -> sb.append(" "+message));
         return sb.toString();
 
     }
