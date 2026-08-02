@@ -7,6 +7,24 @@
 
 ## Challenge Evidence
 
+## Challenge 1 — Welcome Message
+
+### Evidence
+
+![Challenge evidence](images/challenge1.png)
+
+### Description
+
+Briefly explain:
+
+- What was implemented.
+We implemented three classes: Student, Welcome Message, and Challenge1 as the interface to print the message. Student is responsible for holding the student's information, and Welcome Message is responsible for iterating through the container using Stream and printing the message.
+
+- How the work was divided.
+- Which Git operations were used.
+- Which conflicts appeared.
+- How the conflicts were resolved.
+
 ## Technical Explanations
 
 ## Answer to the Conceptual Questionnaire
