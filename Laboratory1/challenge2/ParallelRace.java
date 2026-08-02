@@ -63,7 +63,7 @@ public class ParallelRace {
      * @param args
      */
     public static void main(String[] args){
-        ParallelRace parallelRace = new ParallelRace(null);
+        ParallelRace parallelRace = new ParallelRace(new ArrayList<>(List.of(1,2,3,45,3,1,0)));
         parallelRace.firstCollition();
         //parallelRace.secondCollition();                               //This method is in construction
     }
