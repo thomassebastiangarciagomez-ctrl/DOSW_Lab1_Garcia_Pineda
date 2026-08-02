@@ -1,11 +1,16 @@
 package challenge2;
-import java.util.*;
+import java.util.function.Function;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * This class is form the challenge 2 of the laboratory 1 DOSW
  * 
  */
 public class ParallelRace {
+    
+      
     private ArrayList<Integer> numbers;
 
     /**
@@ -16,6 +21,8 @@ public class ParallelRace {
         this.numbers = new ArrayList<>();
         this.numbers = numbers;
     }
+  
+    public Function<List<Integer>,Integer> maximum = l -> Collections.max(l);
 
     /**
      * This method works on search the minimun value in a ArrayList of Integers
@@ -45,6 +52,7 @@ public class ParallelRace {
      * 
      */
     public void firstCollition(){
+        System.out.println("Maximun value of the array is: " + maximum.apply(numbers));
         System.out.println("Minimun value of the array is: " + minNum());
         System.out.println("Count of elements in the array is: " + countElements());
     }
