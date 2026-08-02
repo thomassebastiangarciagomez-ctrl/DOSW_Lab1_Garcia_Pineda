@@ -1,26 +1,27 @@
 package Laboratory1.challenge1;
-import java.util.*;
 
 public class Student {
     private String name;
-    private String semester;
-    private String years;
+    private int semester;
+    private int age;
     private String email;
-    private List<String> information;
 
-    public Student(String name, String semester, String years, String email){
+    public Student(String name, int semester, int age, String email){
         this.name = name;
         this.semester = semester;
-        this.years = years;
+        this.age = age;
         this.email = email;
-        information = new ArrayList<>();
     }
-
-    public List<String> getInformation(){
-        information.add(name);
-        information.add(semester);
-        information.add(years);
-        information.add(email);
-        return information;
+    public String getName(){
+        return this.name;
+    }
+    public int getSemester(){
+        return this.semester;
+    }
+    public int getAge(){
+        return this.age;
+    }
+    public String getEmail(){
+        return this.email;
     }
 }
