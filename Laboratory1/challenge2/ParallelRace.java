@@ -10,7 +10,6 @@ import java.util.Collections;
  */
 public class ParallelRace {
     
-      
     private ArrayList<Integer> numbers;
 
     /**
@@ -21,22 +20,20 @@ public class ParallelRace {
         this.numbers = new ArrayList<>();
         this.numbers = numbers;
     }
-  
+
+    /**
+     * This funtion works on search the maximun value in a ArrayList of Integers
+     * 
+     * @return Integer that represent the maximun value from array
+     */
     public Function<List<Integer>,Integer> maximum = l -> Collections.max(l);
 
     /**
-     * This method works on search the minimun value in a ArrayList of Integers
+     * This funtion works on search the minimun value in a ArrayList of Integers
      * 
-     * @param numbers ArrayList of Integers that we are working in
      * @return Integer that represent the minimun value from array
      */
-    public int minNum(){
-        int lessMin = numbers.stream()
-            .min((a, b) -> a.compareTo(b))
-            .orElse(null);
-
-        return lessMin;
-    }
+    public Function<List<Integer>,Integer> minimun = l -> Collections.min(l);
 
     /**
      * This method works on count all elements in a ArrayList of Integers
@@ -48,13 +45,46 @@ public class ParallelRace {
     }
 
     /**
+     * This metod works on a decide if the maximun integer in the array is divisor of 2 or not
+     * 
+     * @param number Integer that represent the maximun number in the array
+     * @return Boolean that represent the result of the evaluation
+     */
+    public boolean isDivisorOf2(int number){
+        return (number % 2 == 0) ? true : false;            // This is a ternary operator and it mencioned in the explanation of the challenge 2
+    }
+
+    /**
+     * This metod works on a decide if the size of the array is odd or not
+     * 
+     * @param sizeOf Integer that represent the size of the array
+     * @return Boolean that represent the result of the evaluation
+     */
+    public boolean sizeIsOdd(int sizeOf){
+        return (sizeOf % 2 == 0) ? false : true;            // This is a ternary operator and it mencioned in the explanation of the challenge 2
+    }
+
+    /**
      * This method works on a create a collition between version in git without validations
      * 
      */
     public void firstCollition(){
         System.out.println("Maximun value of the array is: " + maximum.apply(numbers));
-        System.out.println("Minimun value of the array is: " + minNum());
+        System.out.println("Minimun value of the array is: " + minimun.apply(numbers));
         System.out.println("Count of elements in the array is: " + countElements());
+    }
+
+    /**
+     * This method works on a create a collition between version in git with validations
+     * in this moment is in construction
+     * 
+     */
+    public void secondCollition(){
+        System.out.println("Maximun value of the array is: " + maximum.apply(numbers));
+        System.out.println("Minimun value of the array is: " + minimun.apply(numbers));
+        System.out.println("Count of elements in the array is: " + countElements());
+        System.out.println("Maximun value of the array is multiple of 2: " + isDivisorOf2(maximum.apply(numbers)));
+        System.out.println("The size of the list is odd: " + sizeIsOdd(numbers.size()));
     }
 
     /**
@@ -64,7 +94,9 @@ public class ParallelRace {
      */
     public static void main(String[] args){
         ParallelRace parallelRace = new ParallelRace(new ArrayList<>(List.of(1,2,3,45,3,1,0)));
+        System.out.println("First collition: ");
         parallelRace.firstCollition();
-        //parallelRace.secondCollition();                               //This method is in construction
+        System.out.println("\nSecond collition: ");
+        parallelRace.secondCollition();
     }
 }
