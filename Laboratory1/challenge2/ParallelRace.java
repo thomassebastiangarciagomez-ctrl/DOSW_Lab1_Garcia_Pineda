@@ -24,6 +24,8 @@ public class ParallelRace {
   
     public Function<List<Integer>,Integer> maximum = l -> Collections.max(l);
 
+    public Function<Integer,Boolean> isEven = n -> n%2==0 ? true : false;
+
     /**
      * This method works on search the minimun value in a ArrayList of Integers
      * 
@@ -57,6 +59,11 @@ public class ParallelRace {
         System.out.println("Count of elements in the array is: " + countElements());
     }
 
+    public void secondCollition(){
+        int size = countElements();
+        System.out.println( isEven.apply(size) ? "The size is even" : "The size is not even");
+    }
+
     /**
      * This is the main method of the second challenge of laboratory 1
      * 
@@ -65,6 +72,6 @@ public class ParallelRace {
     public static void main(String[] args){
         ParallelRace parallelRace = new ParallelRace(new ArrayList<>(List.of(1,2,3,45,3,1,0)));
         parallelRace.firstCollition();
-        //parallelRace.secondCollition();                               //This method is in construction
+        parallelRace.secondCollition();                               
     }
 }
