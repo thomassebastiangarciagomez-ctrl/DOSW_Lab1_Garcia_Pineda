@@ -29,10 +29,13 @@ public class Challenge5{
 
     public static void main(String[] args){
         Challenge5 ch = new Challenge5();
-        HashSet<Integer> hs = ch.hashSetMethod(List.of(4,9,15,7,18,21,10,5,12, 3, 25, 10, 7, 30, 18, 4));
-        List<Integer> nums = hs.stream().toList();
-        TreeSet<Integer> ts = ch.treeGroup(nums);
-        ts.stream().forEach(e -> System.out.println("Number in the arena: "+e));
+        HashSet<Integer> hs = ch.hashSetMethod(List.of(4,9,15,7,18,21,10,5));
+        HashSet<Integer> nums = new HashSet<>(hs);
+        TreeSet<Integer> ts = ch.treeGroup(List.of(12, 3, 25, 10, 7, 30, 18, 4));
+        nums.addAll(ts);
+        List<Integer> result = new ArrayList<>(nums);
+        Collections.sort(result);
+        result.stream().forEach(e -> System.out.println("Number in the arena: "+e));
     }
 }
 
