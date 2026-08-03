@@ -75,7 +75,7 @@ public class Challenge4{
             Map.entry("silver", 8),
             Map.entry("ruby", 4),
             Map.entry("gold", 12),
-            Map.entry("emerald", 6),
+            Map.entry("emerald", 6)
          );
         Map<String, Integer> ht = ch.hashTableMethod(hashtableData);
         
