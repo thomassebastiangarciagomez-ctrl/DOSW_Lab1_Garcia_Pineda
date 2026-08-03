@@ -79,10 +79,83 @@ We only had one in the end when combining both methods
 - How the conflicts were resolved.
 To resolve these issues, we used GitHub's merge editors, which allowed us to choose which changes to keep.
 
+## Challenge 4 — The Treasure of Duplicate Keys
+
+### Evidence
+![Challenge evidence](images/challenge4.png)
+
+## Description
+
+Briefly explain:
+
+- What was implemented.
+We implement two methods that will be equivalent of HashMap and HashTable, We need to condiderate diferent aspects. Receives key-value pairs of type (String, Integer), Stores them in a HashMap, Ignores duplicate keys and Preserves the first value found.
+
+- How the work was divided.
+According to the instructions, we split up, one creating a method and the other using the corresponding class.
+
+- Which Git operation were used.
+We use branch creation, branch changes, branch status, logs, branch merging, and push/pull
+
+- Which conflicts appeared.
+We only had one in the end when combining both methods
+
+- How the conflicts were resolved.
+To resolve these issues, we used GitHub's merge editors, which allowed us to choose which changes to keep.
+
+
+## Challenge 5 — Battle of sets
+
+### Evidence
+![Challenge evidence](images/challenge5.png)
+
+### Description
+
+Briefly explain:
+
+- What was implemented.
+In this case we create two methods that use HashMap or TreeSet, we need to create with random values and deleate the numbers that is multiple of three or five depending of the case
+
+- How the work was divided.
+According to the instructions, we split up, one creating a method and the other using the corresponding class.
+
+- Which Git operation were used.
+We use branch creation, branch changes, branch status, logs, branch merging, and push/pull
+
+- Which conflicts appeared.
+We only had one in the end when combining both methods
+
+- How the conflicts were resolved.
+To resolve these issues, we used GitHub's merge editors, which allowed us to choose which changes to keep.
+
+## Challenge 6 — The Decision Machine
+
+### Evidence
+![Challenge evidence](images/challenge6.png)
+
+### Description
+
+Briefly explain:
+
+- What was implemented.
+We need to create a method that show a message when you script a special word, it was a eight words and it was divide in two groups of four for each student in the laboratory 1
+
+- How the work was divided.
+According to the instructions, we split up, one creating a method and the other using the corresponding class.
+
+- Which Git operation were used.
+We use branch creation, branch changes, branch status, logs, branch merging, and push/pull
+
+- Which conflicts appeared.
+We only had one in the end when combining both methods
+
+- How the conflicts were resolved.
+To resolve these issues, we used GitHub's merge editors, which allowed us to choose which changes to keep.
 
 ## Answer to the Conceptual Questionnaire
 
 1. Team agreements: Add the agreements you defined in the Onboarding section here.
+We decided to divide the work in a half, but was necesary have a communication between us, because we need to know if someone do any change in the repository or in the develop branch because if a conflict happens we need to solve, our channel of communication was whatsapp and we try to communicane every day.
 
 2. What is the difference between git merge and git rebase?
 git merge combines two branches by creating a new "merge commit" that has two parents, preserving the full history of both branches exactly as it happened. git rebase instead takes the commits from one branch and replays them on top of another branch, creating a linear history as if those changes had been made sequentially from the start.
