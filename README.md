@@ -21,11 +21,64 @@ Briefly explain:
 We implemented three classes: Student, Welcome Message, and Challenge1 as the interface to print the message. Student is responsible for holding the student's information, and Welcome Message is responsible for iterating through the container using Stream and printing the message.
 
 - How the work was divided.
-- Which Git operations were used.
-- Which conflicts appeared.
-- How the conflicts were resolved.
+We divided the code into two parts; the first part was to display the name, semester, and age, and the last part was to display the email.
 
-## Technical Explanations
+- Which Git operations were used.
+We use branch creation, branch switching, commit creation, and pushing/pulling changes.
+
+- Which conflicts appeared.
+We had no conflicts because one part is done first and then the other, and they did not affect each other.
+
+## Challenge 2 — Parallel Commit Race
+
+### Evidence
+
+![Challenge evidence](images/challenge2.png)
+
+### Description
+
+Briefly explain:
+
+- What was implemented.
+For the first collision, we implemented three methods for finding the maximum, minimum, and number of elements. For the second collision, we used methods for finding even and odd numbers.
+
+- How the work was divided.
+We divided ourselves according to the instructions, then one followed what corresponded to his line of development.
+
+- Which Git operations were used.
+We use branch creation, branch changes, branch status, logs, branch merging, and push/pull
+
+- Which conflicts appeared.
+This was one of the challenges that caused the most conflicts, since that was the idea, and we encountered conflicts due to having changed lines in the same file and creating methods with the same names.
+
+- How the conflicts were resolved.
+To resolve these issues, we used GitHub's merge editors, which allowed us to choose which changes to keep.
+
+## Challenge 3 — The Mysterious Echo
+
+### Evidence
+
+![Challenge evidence](images/challenge3.png)
+
+### Description
+
+Briefly explain:
+
+- What was implemented.
+What we did was implement two methods, one to repeat a message and another to reverse it, using String Builder and String Buffer, and finally we combined both methods to obtain the final result.
+
+- How the work was divided.
+According to the instructions, we split up, one creating a method and the other using the corresponding class.
+
+- Which Git operations were used.
+We use branch creation, branch changes, branch status, logs, branch merging, and push/pull
+
+- Which conflicts appeared.
+We only had one in the end when combining both methods
+
+- How the conflicts were resolved.
+To resolve these issues, we used GitHub's merge editors, which allowed us to choose which changes to keep.
+
 
 ## Answer to the Conceptual Questionnaire
 
